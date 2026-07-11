@@ -4,7 +4,7 @@
 
 ## Why This Project?
 
-Most portfolio projects that claim to use "Spark" only run `df.show()` on a tiny CSV. This one is built specifically to exercise the parts of PySpark that actually matter at scale: **deduplication, null handling, groupBy aggregations, window functions, and columnar storage** — the operations a Data Engineer runs daily against production-sized datasets.
+Most portfolio projects that claim to use "Spark" only run `df.show()` on a tiny CSV. This one is built specifically to exercise the parts of PySpark that actually matter at scale: **deduplication, null handling,groupBy aggregations, window functions, and columnar storage** — the operations a Data Engineer runs daily against production-sized datasets.
 
 ## What It Processes
 
@@ -45,13 +45,7 @@ Generate (501,000 rows) → Load into Spark → Clean (→ 495,000 rows)
 - Window functions for ranking (`Window.orderBy`, `rank()`)
 - Data quality handling (null removal, deduplication, invalid-row filtering)
 - Columnar storage with Parquet, including a read-back verification step
-
-## Run It Yourself
-
-1. Open `Big_Data_Batch_Pipeline_PySpark.ipynb` in Google Colab
-2. Runtime → Run all
-3. No external dataset or setup required — the data is generated inline
-
+  
 ## Author
 
 **Maryam Saif** — [GitHub](https://github.com/saifmaryam)
